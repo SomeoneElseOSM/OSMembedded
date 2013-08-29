@@ -1,0 +1,15 @@
+# Ignored files
+bin_10
+images/osm_tiles/8
+images/osm_tiles/9
+images/osm_tiles/10
+images/osm_tiles/11
+images/osm_tiles/12
+images/osm_tiles/13
+images/osm_tiles/14
+images/osm_tiles/15
+images/osm_tiles/16
+images/osm_tiles/17
+images/osm_tiles/18
+osmembedded.zip
+*~
