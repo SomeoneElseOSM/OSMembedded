@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+	id="osmembedded"
+        version="0.0.2.3">
+
+<name>OSMembedded</name>
+
+<description>Openstreetmap - packaged switch2osm leaflet example</description>
+
+<author>
+  Andy Townsend
+</author>
+
+  <license>
+    Based on an example at http://switch2osm.org/using-tiles/getting-started-with-leaflet/ 
+
+    Contains Leaflet (http://leafletjs.com/index.html):
+
+    Copyright (c) 2010-2013, Vladimir Agafonkin
+    Copyright (c) 2010-2011, CloudMade
+    All rights reserved.
+  </license>
+
+  <access uri="*" subdomains="true"/>
+
+  <icon src="images\osmembedded_icon.png" />
+
+  <feature id="blackberry.app" />
+
+  <content src="index.html" />
+  <rim:permissions> 
+    <rim:permit>access_shared</rim:permit>
+  </rim:permissions>
+</widget>
