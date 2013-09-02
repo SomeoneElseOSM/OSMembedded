@@ -37,8 +37,15 @@ function initmap() {
 	    center: new L.LatLng(53.1374, -1.5530),
 	    zoom: 15,
 	    layers: [ embLayer ],
-	    zoomControl: false
+	    zoomControl: false,
+	    attributionControl: false
 	});
+
+    var attrib = new L.Control.Attribution;
+    attrib.setPrefix( "Uses switch2osm, Leaflet" );
+    attrib.removeAttribution( "Map data &copy; OpenStreetMap contributors" );
+    attrib.addAttribution( "Data &copy; OpenStreetMap contributors" );
+    map.addControl( attrib );
 
     var baseMaps = {
 	"In App":       embLayer,
