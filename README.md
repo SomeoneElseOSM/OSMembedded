@@ -12,5 +12,6 @@ A version of this called "MatlockMap" (with tiles generated around Matlock, Derb
 
 See the comments inside "leaflet_embed.js" for more information about what tile layers would work, including how to access tiles store in the device memory external to the application, or on the SD card.
 
-Although this is a Blackberry WebWorks example, there's no Blackberry-specific code in it - it should be relatively straightforward to package for other platforms.
+Although this is a Blackberry WebWorks example, there's no Blackberry-specific code in it - it should be relatively straightforward to package for other platforms using PhoneGap or similar.
+
 
