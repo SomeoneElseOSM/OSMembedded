@@ -3,7 +3,7 @@
 <widget xmlns="http://www.w3.org/ns/widgets"
         xmlns:rim="http://www.blackberry.com/ns/widgets"
 	id="osmembedded"
-        version="0.0.2.3">
+        version="0.0.3.2">
 
 <name>OSMembedded</name>
 

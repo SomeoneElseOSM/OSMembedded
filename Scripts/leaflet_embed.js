@@ -14,17 +14,18 @@ function initmap() {
     // as they're not present by default
 
     var embUrl='images/osm_tiles/{z}/{x}/{y}.png';
-//    var devUrl='file:///accounts/1000/shared/documents/osm_tiles/{z}/{x}/{y}.png';
+    var devUrl='file:///accounts/1000/shared/documents/osm_tiles/{z}/{x}/{y}.png';
 //    var sdcUrl='file:///accounts/1000/removable/sdcard/documents/osm_tiles/{z}/{x}/{y}.png';
     var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 
     var osmAttrib='Map data &copy; OpenStreetMap contributors';
 
     // maxZoom is restricted to 16 on the embedded layer as we haven't packaged zoom levels
-    // more that that within the application.
+    // more that that within the application.  The later MatlockMap had up to 18.
+    // devLayer is also up to 16 only.
 
     var embLayer = new L.TileLayer(embUrl, {minZoom: 6, maxZoom: 16, attribution: osmAttrib});
-//    var devLayer = new L.TileLayer(devUrl, {minZoom: 6, maxZoom: 18, attribution: osmAttrib});
+    var devLayer = new L.TileLayer(devUrl, {minZoom: 6, maxZoom: 16, attribution: osmAttrib});
 //    var sdcLayer = new L.TileLayer(sdcUrl, {minZoom: 6, maxZoom: 18, attribution: osmAttrib});
     var osmLayer = new L.TileLayer(osmUrl, {minZoom: 6, maxZoom: 18, attribution: osmAttrib});
 
@@ -49,7 +50,7 @@ function initmap() {
 
     var baseMaps = {
 	"In App":       embLayer,
-//	"On Device":    devLayer,
+	"On Device":    devLayer,
 //	"SD Card":      sdcLayer,
     };
 
